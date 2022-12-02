@@ -46,11 +46,7 @@ def model_predict():
     new_data = pd.DataFrame([new_data])
     print('New Data : ', new_data)
 
-    #Scaling
-    new_data = new_data.filter(columns=['Tenure', 'MonthlyCharges', 'SeniorCitizen', 'Partner', 'Dependents',
-       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
-       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
-       'Contract', 'PaperlessBilling', 'PaymentMethod'])
+    #Preprocessing
     X = prep.transform(new_data)
 
     # Predict
