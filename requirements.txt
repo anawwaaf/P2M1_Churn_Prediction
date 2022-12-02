@@ -1,6 +1,6 @@
-pandas==1.5.1
+pandas
 scikit-learn==1.1.2
 numpy
-flask==1.1.2
+flask
 gunicorn
 tensorflow-cpu
